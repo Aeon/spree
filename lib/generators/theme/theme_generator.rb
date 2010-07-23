@@ -22,10 +22,6 @@ class ThemeGenerator < Rails::Generator::NamedBase
       m.template '../../extension/templates/extension.rb', "#{theme_path}/#{theme_file_name}.rb"
       m.template '../../extension/templates/extension_hooks.rb', "#{theme_path}/#{extension_name.downcase}_hooks.rb"
 
-      #if options[:with_test_unit]
-       
-       
-      #end
       theme_default = '../../../../vendor/extensions/theme_default'
 
       # eventually we should make this optional plus include admin css etc. 
